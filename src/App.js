@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+// import firebaseapp from "./config";
+// import { getFirestore, setDoc, doc, onSnapshot } from "firebase/firestore";
+// import { useState, useEffect } from "react";
+import FancyForm from "./FancyForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="z-10 w-full items-center font-mono flex flex-col">
+      <h1 className="text-2xl pb-3">AI TEXT SUMMARIZER</h1>
+      <p className="max-w-lg text-center text-sm">
+        Copy in any text within the User Input box, and then click submit. A
+        summary will automatically be generated. <br />
+        Created using the Google PaLM API, hosted using Firebase.
+      </p>
+
+      <FancyForm />
+
+      {/* <FancyOut /> */}
     </div>
   );
 }
